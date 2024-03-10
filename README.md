@@ -1,16 +1,18 @@
-# image-format-size-comparison
-Visualize the impact of image resizing on file size across various image formats including JPEG, PNG, GIF, and different bitmap color depths. Includes command line options.
+# Image Format Size Comparison
+This project provides a Python script to visualize the impact of image resizing on file size across various image formats including JPEG, PNG, and BMP. The script generates individual graphs for each format and a comparison graph for all formats. The graphs are saved as PNG files in a specified folder.
 
 ## Installation
-Before running the script, make sure the matplotlib package is installed:
+Before running the script, make sure you have the required Python packages installed. You can install them with pip:
 
-`pip install matplotlib`
+`pip install opencv-python matplotlib`
 
 ## Usage
-To generate a graph for a specific image format, run the script with desired format as an argument. The available formats are `jpeg`, `png`, `gif`, `bmp_mono`, `bmp_16`, `bmp_256`, and `bmp_24bit`. For example, to plot the graph for JPEG files:
+The script takes the path of an image file and an output folder as arguments. It resizes the image to various percentages of the original size, saves the resized images in the specified formats, and generates graphs of the file sizes.
 
-`python ifsc.py jpeg`
+Example of how to use the script:
 
-To generate graphs for all supported image types at once:
+`python resize_and_save_image.py /path/to/image /path/to/output/folder`
 
-`python ifsc.py all`
+This will resize the image to percentages ranging from 10% to 100% of the original size, save the resized images in JPEG, PNG, and BMP formats in the output folder, and generate the graphs in a "graphs" subfolder within the output folder.
+
+You can customize the formats and resize percentages by modifying the formats and resize_percents parameters in the resize_and_save_image function.
