@@ -15,6 +15,6 @@ Default input image:
 
 <img src="/data/RPi.png" width="420">
 
-Example output comparison graph:
+Example output comparison graph using default image:
 
 <img src="/data/graphs/comparison_graph.png" width="420">
