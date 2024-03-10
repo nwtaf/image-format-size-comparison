@@ -12,7 +12,9 @@ The script takes the path of an image file ('data/RPi.png' by default) and an ou
 You can customize the formats and resize percentages by modifying the formats and resize_percents parameters in the resize_and_save_image function.
 
 Default input image:
-<img src="/data/RPi.png" width="200">
+
+<img src="/data/RPi.png" width="420">
 
 Example output comparison graph:
-<img src="/data/graphs/comparison_graph.png>
+
+<img src="/data/graphs/comparison_graph.png" width="420">
