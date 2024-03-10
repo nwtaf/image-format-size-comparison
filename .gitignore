@@ -1,2 +1,2 @@
 data/resized_images/*
-data/graphs/*
+data/graphs/* !data/graphs/comparison_graph.png

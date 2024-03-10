@@ -11,5 +11,8 @@ The script takes the path of an image file ('data/RPi.png' by default) and an ou
 
 You can customize the formats and resize percentages by modifying the formats and resize_percents parameters in the resize_and_save_image function.
 
-Example output:
-![RaspberryPi4 on white background](/data/RPi.png)
+Default input image:
+<img src="/data/RPi.png" width="200">
+
+Example output comparison graph:
+<img src="/data/graphs/comparison_graph.png>
