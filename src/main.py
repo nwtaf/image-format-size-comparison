@@ -55,7 +55,7 @@ def generate_graphs(image_sizes, graphs_folder):
 
 if __name__ == "__main__":
     current_dir = Path(__file__).parent
-    image_path = current_dir / '..' / 'data' / 'RPi.png'
+    image_path = current_dir / '..' / 'data' / 'gremlin.jpg'
     output_folder = current_dir / '..' / 'data' / 'resized_images'
     graphs_folder = current_dir / '..' / 'data' / 'graphs'
 
