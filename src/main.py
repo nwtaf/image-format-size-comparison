@@ -17,7 +17,9 @@ def resize_and_save_image(image_path, output_folder, formats=('jpeg', 'png', 'bm
             resized_image = cv2.resize(original_image, new_size)
 
             file_name = f"resized_{percent}percent.{fmt}"
-            file_path = output_folder / file_name
+            format_folder = output_folder / fmt  # Create a separate folder for each format
+            format_folder.mkdir(parents=True, exist_ok=True)  # Ensure the format folder exists
+            file_path = format_folder / file_name  # Save the file in the format folder
             cv2.imwrite(str(file_path), resized_image)
 
             image_sizes[percent][fmt] = file_path.stat().st_size
