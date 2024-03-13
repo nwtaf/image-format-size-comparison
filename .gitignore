@@ -1,4 +1,5 @@
 data/resized_images/*
 data/graphs/* !data/graphs/comparison_graph.png
+data/detected_images/*
 runs/*
 yolov8n.pt
